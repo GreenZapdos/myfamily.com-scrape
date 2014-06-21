@@ -1,45 +1,68 @@
+  /**********/
+ /*Titlebar*/
+/**********/
+
 div.titlebar{
-background-color:black;
-padding:0.5em;
-color:white;
-font-size:1.2em;
+	background-color:black;
+	padding:0.5em;
+	color:white;
+	font-size:1.2em;
 }
 
 div.titlebar > a:link, div.titlebar > a:visited, div.titlebar > a:active, div.titlebar > a:hover{
-color: white;
+	color: white;
 }
 
 div.titlebar > a:active, div.titlebar > a:hover{
-text-decoration: none;
+	text-decoration: none;
 }
 
+/*Main elements style*/
+
 div.main-body{
-padding:2em;
+	padding:2em;
 }
 
 div.title{
-font-size:2em;
+	font-size:2em;
 }
 
 div.title > a:link, div.title > a:visited, div.title > a:active, div.title > a:hover{
-color: black;
+	color: black;
 }
 
 div.title > a:active, div.title > a:hover{
-text-decoration: none;
+	text-decoration: none;
 }
 
+  /***************/
+ /*News postings*/
+/***************/
+
 div.news-username{
-font-size:1.2em;
+	font-size:1.2em;
 }
 
 div.news-post{
-border: 1px solid black;
-padding: 0.5em;
-margin: 0.5em;
+	border: 1px solid black;
+	padding: 0.5em;
+	margin: 0.5em;
 }
 
 div.news-infobox{
-margin:1em;
-color:DimGray;
+	margin:1em;
+	color:DimGray;
+}
+
+  /*******************/
+ /*News table styles*/
+/*******************/
+
+div.news-body td{
+	padding: 0.4em;
+}
+
+div.news-body > table {
+	border-collapse: separate;
+	border-spacing: 2px;
 }
