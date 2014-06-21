@@ -1,0 +1,10 @@
+{% extends "theme.html" %}
+
+{% block titlebar %}<a href={{ url_for('news_index') }}>News</a>{% endblock %}
+
+{% block body %}
+<div class=title>News Index</div>
+{% for i in data['news'] %}
+{{ i['body']['date'] }} <a href="{{ url_for('news_item', id=i['id']) }} "> {{ i['title'] }}</a> <br>
+{% endfor %}
+{% endblock %}

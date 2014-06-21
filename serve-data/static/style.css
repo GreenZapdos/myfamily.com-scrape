@@ -1,0 +1,45 @@
+div.titlebar{
+background-color:black;
+padding:0.5em;
+color:white;
+font-size:1.2em;
+}
+
+div.titlebar > a:link, div.titlebar > a:visited, div.titlebar > a:active, div.titlebar > a:hover{
+color: white;
+}
+
+div.titlebar > a:active, div.titlebar > a:hover{
+text-decoration: none;
+}
+
+div.main-body{
+padding:2em;
+}
+
+div.title{
+font-size:2em;
+}
+
+div.title > a:link, div.title > a:visited, div.title > a:active, div.title > a:hover{
+color: black;
+}
+
+div.title > a:active, div.title > a:hover{
+text-decoration: none;
+}
+
+div.news-username{
+font-size:1.2em;
+}
+
+div.news-post{
+border: 1px solid black;
+padding: 0.5em;
+margin: 0.5em;
+}
+
+div.news-infobox{
+margin:1em;
+color:DimGray;
+}

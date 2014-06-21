@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='reset.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% block head %}{% endblock %}
+</head>
+<body>
+<div class=titlebar><a href="{{ url_for('index') }}">Cowley-Archive</a> / {% block titlebar %}{% endblock %}</div>
+<div class=main-body>
+{% block body %}{% endblock %}
+</div>
+</body>
+</html>

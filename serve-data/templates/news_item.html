@@ -1,0 +1,28 @@
+{% extends "theme.html" %}
+
+{% block head %}
+<title>{{ item['title'] }}</title>
+{% endblock %}
+
+{% block titlebar %}<a href={{ url_for('news_index') }}>News</a> / <a href={{ url_for('news_item', id=id) }}>{{ item['title'] }}</a>{% endblock %}
+
+{% block body %}
+<div class=title>{{ item['title'] }}</div>
+<div class=news-post>
+<div class=news-infobox>
+<div class=news-username>{{ item['body']['author'] }}</div>
+<div class=news-date>{{ item['body']['date'] }}</div>
+</div>
+<div class=news-body>{{ item['body']['text']|safe }}</div>
+</div>
+
+{% for x in item['body']['replies'] %}
+<div class=news-post>
+<div class=news-infobox>
+<div class=news-username>{{ x['body']['author'] }}</div>
+<div class=news-date>{{ x['body']['date'] }}</div>
+</div>
+<div class=news-body>{{ x['body']['text']|safe }}</div>
+</div>
+{% endfor %}
+{% endblock %}
